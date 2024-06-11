@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Trixter
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="background-blur"></div>
+        <div class='container'>
+            <nav>
+            <img src="images/TRIXTER.jpg">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+
+                  
+            </ul>
+            </nav>
+            <div class="header-text">
+                <p>3D Model/Video Editing/UI-UX DESIGN</p>
+                <H1>Welcome to <span>Trixter Production</span><br>
+                    Digital Studio
+                </H1>
+
+            </div>
+           
+        </div>
+        
+    </div>
+    <!-- -------------------about------------------------ -->
+<div id="about">
+    <div class="container">
+        <div class='row'>
+            <div class="about-col1">
+                <img src="images/TRIXTER.jpg">
+            
+            </div>
+            <div class="about-col2">
+               <h1 class="about-head">About us</h1><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio non sint modi quia ad molestias mollitia, laboriosam, sequi possimus ea cum temporibus blanditiis recusandae qui? Numquam, sit totam! Earum, dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eaque facilis quo harum ipsam, veritatis unde odio corrupti animi eius accusantium, exercitationem quaerat architecto iusto porro similique numquam nesciunt non.
+                </p>
+                <div class="tab-head">
+                    <p class="tab-link active-link" onclick='opentab("skills")'>Skills</p>
+                    <p class="tab-link" onclick='opentab("Experience")'>Experience</p>
+                    <p class="tab-link" onclick='opentab("Education")'>Education</p>
+
+                </div>
+                <div class="contents-tab content-active" id="skills">
+                    <ul>
+                        <li><span>Designs</span><br>Web Designs/Posters/Vector/Branding</li>
+                        <li><span>Video-Editing</span><br>Edits/Color-grading/VFX/Motion-Graphics</li>
+                        <li><span>3D</span><br>Modelling/Texturing/Environment/FX/Animation</li>
+
+                    </ul>
+                </div>
+                <div class="contents-tab" id="Experience">
+                    <ul>
+                        <li><span>Designs</span><br>Web Designs/Posters/Vector/Branding</li>
+                        <li><span>Video-Editing</span><br>Edits/Color-grading/VFX/Motion-Graphics</li>
+                        <li><span>3D</span><br>Modelling/Texturing/Environment/FX/Animation</li>
+
+                    </ul>
+                </div>
+                <div class="contents-tab" id="Education">
+                    <ul>
+                        <li><span>Designs</span><br>Web Designs/Posters/Vector/Branding</li>
+                        <li><span>Video-Editing</span><br>Edits/Color-grading/VFX/Motion-Graphics</li>
+                        <li><span>3D</span><br>Modelling/Texturing/Environment/FX/Animation</li>
+                    </ul>
+                </div>      
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName('tab-link');
+    var contenttabs=document.getElementsByClassName('contents-tab');
+    function opentab(tabname){
+        for(var tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(var contenttab of contenttabs){
+            contenttab.classList.remove('content-active');
+        }
+    
+    event.currentTarget.classList.add('active-link');
+    document.getElementById(tabname).classList.add('content-active');
+    }
+</script>
+</body>
+</html>
